@@ -23,7 +23,7 @@ import Loader from '../Loader/Loader';
     const [loginError, setLoginError] = useState('');
     let LoginDetailsBag = [{}];
     const [username, setUsername] = useState('');
-    const [fullName, setFullName]= useState('');
+    const [fullName, setFullName]= useState(''); 
     const user = {username, fullName};
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = React.useState(false);

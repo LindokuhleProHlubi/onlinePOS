@@ -17,7 +17,7 @@ const ClientPackages = ({clientPackage, index}) => {
   const [play, setPlay]= useState(false);
 
 
-   
+    
    const addToCart = ()=>{
 
     const cartItem = {id:clientPackage.id, name:clientPackage.stageName, title:clientPackage.title, cellNumber:clientPackage.cellNumber, price: clientPackage.price,  image:clientPackage.image, code:clientPackage.songCode }

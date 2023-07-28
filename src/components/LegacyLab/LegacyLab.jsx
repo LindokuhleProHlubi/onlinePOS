@@ -20,7 +20,7 @@ export const LegacyLab = () => {
        const [nationalID, setNationalID] = useState('');
        const [voucherNumber, setVoucherNumber] = useState('');
        let selectedPurposeID = '';	
-       let enquiredUserDetailsBag = {}; 
+       let enquiredUserDetailsBag = {};  
        let userContactResponse = {};
        const [open, setOpen] = React.useState(false);
     

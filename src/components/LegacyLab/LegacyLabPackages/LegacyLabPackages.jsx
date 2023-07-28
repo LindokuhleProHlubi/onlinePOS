@@ -18,7 +18,7 @@ export const LegacyLabPackages = () => {
        const classes = useStyles();
        const history = useHistory();
        const { baseURL, dataReceiver } = useContext(CartContext);
-       const [purposes, setPurposes] = useState([]);
+       const [purposes, setPurposes] = useState([]); 
        const [organizations, setOrganizations] = useState([]);
        const [selectedPurpose, setSelectedPurpose] = useState('')
        const [selectedEnquiryPurpose, setSelectedEnquiryPurpose] = useState('');
