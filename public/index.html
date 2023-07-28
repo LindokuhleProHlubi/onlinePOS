@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="ESwatinis best money network application"
+      content="iCredit by Digimage"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/epayLogo.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> 
+    
+    <title>iCredit</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div> 
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('worker.js').then(function(registration) {
+            console.log('iCredit Web initializatilizing successful', registration.scope);
+          }, function(err) {
+            console.log('iCredit initializing: failed', err);
+          }).catch(function(err) {
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('iCredit Initialization is not supported by browser.');
+      }
+    </script>
+
+  </body>
+</html>
